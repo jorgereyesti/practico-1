@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+h1{
+    color: #581882;
+}
+
+.sidebar-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: darkturquoise;
+    padding-left: 20px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+.sidebar a {
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.sidebar a.selected {
+    background-color: white;
+    padding: 0px 0px 0px 10px;
+    font-weight: 700;
+}
+
+.sidebar a:hover {
+    background-color: paleturquoise;
+}
+
+.head-title{
+    padding: 0px 20px 20px;
+    flex: 1;    
+}
+
+.card-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px 0px 20px;
+    margin: 20px 0px 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
