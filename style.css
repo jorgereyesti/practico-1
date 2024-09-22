@@ -5,6 +5,9 @@ body {
 h1{
     color: #581882;
 }
+a{
+    text-decoration: none;
+}
 
 .sidebar-layout {
     display: flex;
@@ -32,17 +35,45 @@ h1{
 .sidebar a:hover {
     background-color: paleturquoise;
 }
-
-.head-title{
-    padding: 0px 20px 20px;
-    flex: 1;    
+.head-title {
+    flex: 1;
+    padding: 0px 20px 0px;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+}
+.head-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
 }
 
-.card-container {
+.card {
     background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px 0px 20px;
-    margin: 20px 0px 20px;
+    padding: 20px 0px;
+    margin: 20px 0px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
+}
+.button-nav-back {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    border : none;
+}
+.button-search {
+    border : none;
+}
+.body-student {
+    display: flex;
+    padding: 20px 20px;
+    
+}
+.page-student {
+    flex: 1;
+}
+input {
+    width: 100%;
 }

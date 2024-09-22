@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Trabajo Practico 1</title>
+</head>
+<body>
+    <div class="sidebar-layout">
+        <div class="sidebar">
+            <h3>Trabajo Práctico 1</h3>
+                <a href="index.html">Página Principal</a>
+                <a href="student.html" class="selected">Alumnos</a>        
+        </div>
+        <div class="page-student">
+            <div class="head-nav">
+                <h2>Alumnos</h2>
+                <button class="button-nav-back">Agregar</button> 
+            </div>
+            <div class="body-student">
+                <input type="text" id="searchInput" onkeyup="filterByLastName()" placeholder="Buscar por apellido...">
+                <button class="button-search" id="searchButton">Buscar</button>
+            </div>  
+        </div>           
+    </div>
+  
+</body>
+</html>
