@@ -68,7 +68,7 @@ a{
 }
 .body-student {
     display: flex;
-    padding: 20px 20px;
+    padding: 20px 20px 5px;
     
 }
 .page-student {
@@ -76,4 +76,15 @@ a{
 }
 input {
     width: 100%;
+}
+.table-student {
+    padding: 0px 20px 0px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #7a7a7a;
+}
+table, th, td {
+    border: 1px solid #7a7a7a;
 }
