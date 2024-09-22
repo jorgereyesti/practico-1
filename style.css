@@ -55,9 +55,17 @@ a{
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
 }
-.button-nav-back {
+.button-nav-add {
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
     background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    border : none;
+}
+.button-nav-back {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    background-color: red;
     color: white;
     padding: 7px;
     border-radius: 4px;
@@ -74,7 +82,12 @@ a{
 .page-student {
     flex: 1;
 }
+
 input {
+    width: 50%;
+    align-content: end;
+}
+.input-full {
     width: 100%;
 }
 .table-student {
@@ -87,4 +100,25 @@ table {
 }
 table, th, td {
     border: 1px solid #7a7a7a;
+}
+.pagination {
+    display: flex;
+    padding: 5px 20px 0px;
+    justify-content: flex-end;
+    align-items: center;
+}form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 20px 0px 20px;    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+.form-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 20px;
 }

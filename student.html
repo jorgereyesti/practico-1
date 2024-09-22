@@ -17,10 +17,10 @@
         <div class="page-student">
             <div class="head-nav">
                 <h2>Alumnos</h2>
-                <button class="button-nav-back">Agregar</button> 
+                <a href="addStudent.html" class="button-nav-add" type="button" onclick="addStudent()">Agregar</a> 
             </div>
             <div class="body-student">
-                <input type="text" id="searchInput" onkeyup="filterByLastName()" placeholder="Buscar por apellido...">
+                <input class="input-full" type="text" id="searchInput" onkeyup="filterByLastName()" placeholder="Buscar por apellido...">
                 <button class="button-search" id="searchButton">Buscar</button>
             </div>  
             <div class="table-student">
@@ -35,6 +35,15 @@
                     <tbody></tbody>
                 </table>
             </div>
+            <div class="pagination" id="pagination">
+                Items por página:
+                <select id="pageSelect">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <script src="script.js"></script>
         </div>           
     </div>
   
