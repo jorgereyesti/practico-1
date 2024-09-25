@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Trabajo Practico 1</title>
+    <title>Trabajo Practico N° 1</title>
+
 </head>
 <body>
     <div class="sidebar-layout">
@@ -20,8 +20,8 @@
                 <a href="addStudent.html" class="button-nav-add" type="button" onclick="addStudent()">Agregar</a> 
             </div>
             <div class="body-student">
-                <input class="input-full" type="text" id="searchInput" onkeyup="filterByLastName()" placeholder="Buscar por apellido...">
-                <button class="button-search" id="searchButton">Buscar</button>
+                <input class="input-full" type="text" id="searchInput" placeholder="Buscar por apellido...">
+                <button class="button-search" id="searchButton" type="button" onclick="filterStudentsByLastName()">Buscar</button>
             </div>  
             <div class="table-student">
                 <table id="tableStudent">
@@ -35,17 +35,17 @@
                     <tbody></tbody>
                 </table>
             </div>
-            <div class="pagination" id="pagination">
-                Items por página:
-                <select id="pageSelect">
-                    <option value="1">1</option>
+            <div class="row-items">
+                <label for="rowsPerPage">Ítems por página:</label>
+                <select id="rowsPerPage">
                     <option value="3">3</option>
                     <option value="6">6</option>
+                    <option value="9">9</option>
                 </select>
+                <div class="pagination" id="pagination"></div>
             </div>
-            <script src="script.js"></script>
         </div>           
     </div>
-  
+    <script src="showTable.js"></script>
 </body>
 </html>
